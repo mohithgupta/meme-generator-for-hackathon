@@ -1,0 +1,19 @@
+:root{
+  --fontSize : 1.2rem;
+}
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.skip {
+  background-color: #f02424;
+  font-size: var(--fontSize);
+}
+.generate {
+  background-color: #0275d8;
+  font-size: var(--fontSize);
+}
+.img{
+  width:90vw;
+  height: auto;
+}
