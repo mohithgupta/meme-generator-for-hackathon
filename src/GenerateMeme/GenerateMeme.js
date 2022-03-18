@@ -40,8 +40,6 @@ export const GenerateMeme = () => {
     formData.append('template_id', currentMeme.id);
     captions.forEach((c, index) => formData.append(`boxes[${index}][text]`, c));
 
-    // const topText = captions[0]
-
     fetch('https://api.imgflip.com/caption_image', {
       method: 'POST',
       body: formData
@@ -49,7 +47,7 @@ export const GenerateMeme = () => {
     .then(res => {
       res.json()
       .then(res => {
-        history.push(`/generated?url=${res.data.url}&top=${captions[0]}&bot=${captions[1]}`);
+        history.push(`/generated?url=${res.data.url}`);
       });
     });
   };
@@ -79,8 +77,6 @@ export const GenerateMeme = () => {
     })
   }, []);
 
-  // console.log(Array(2).fill(""))
-
   useEffect(() => {
     if(memes.length) {
       setCaptions( Array(memes[memeIndex].box_count).fill("") );
@@ -92,7 +88,6 @@ export const GenerateMeme = () => {
     <div className={styles.container}>
       <button onClick={generate} className={styles.generate}>Generate Meme!</button>
       <button onClick={() => setMemeIndex(memeIndex + 1)} className={styles.skip}>Skip this Meme!</button>
-      {console.log(captions.length)}
       {
         captions.map((c, index) => (
           <input onChange={(e) => updateText(e, index)} key={index} 

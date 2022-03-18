@@ -12,8 +12,6 @@ export const MemeGenerated = () => {
   const history = useHistory();
   const location = useLocation();
   const url = new URLSearchParams(location.search).get('url');
-  const top = new URLSearchParams(location.search).get('top');
-  const bot = new URLSearchParams(location.search).get('bot');
 
   const copyLink = () => {
     
