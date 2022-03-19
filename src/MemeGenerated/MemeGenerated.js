@@ -30,7 +30,7 @@ export const MemeGenerated = () => {
    
       <button onClick={() => history.push('/')} className={styles.home}>
         Make More Memes
-      </button>npm
+      </button>
    
       { url && <img alt='generated_meme_img' src={url} className={styles.img} /> }
    

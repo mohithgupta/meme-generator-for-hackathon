@@ -117,7 +117,7 @@ export const GenerateMeme = () => {
 
   useEffect(() => {
     if(memes.length) {
-      setCaptions( Array(memes[memeIndex].box_count).fill("") );
+      setCaptions( Array(2).fill("") );
     }
   }, [memes, memeIndex]);
 
