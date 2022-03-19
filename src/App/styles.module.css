@@ -1,0 +1,26 @@
+.github_link{
+
+    position: absolute;
+    top:-20px;
+    left:10px;
+}
+
+.github_link p{
+
+    display: none;
+    color:#fff;
+    vertical-align:top;
+}
+
+.github_link p:hover{
+
+        cursor: pointer;
+}
+
+.github_link > a > img{
+
+    display: inline-block;
+    width: 40px;
+    border:none;
+    box-shadow: none;
+}
