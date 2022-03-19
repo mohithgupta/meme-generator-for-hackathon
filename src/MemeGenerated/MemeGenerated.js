@@ -25,17 +25,25 @@ export const MemeGenerated = () => {
   }
 
   return(
-    <div className={styles.container}>
+   
+   <div className={styles.container}>
+   
       <button onClick={() => history.push('/')} className={styles.home}>
         Make More Memes
       </button>npm
+   
       { url && <img alt='generated_meme_img' src={url} className={styles.img} /> }
+   
       <button onClick={copyLink} className={styles.copy}>
+       
         {copied ? 'Link copied!' : 'Copy Meme link'}
+      
       </button>
+   
       <button onClick={downloadImage} className={styles.copy}>
         Download the Meme
       </button>
+   
     </div>
   );
 };
