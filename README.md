@@ -1,4 +1,4 @@
-## Welcome to my Meme Generator Project, which was built during the "Code Combat React 3.0" Hackathon by dunhumby.
+## Welcome to my Meme Generator Project, which was built during the "Code Combat React 3.0" Hackathon by dunnhumby.
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app). 
 
